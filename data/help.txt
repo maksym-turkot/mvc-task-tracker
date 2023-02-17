@@ -1,0 +1,76 @@
+msg
+This is a task-tracking program. 
+Type any of the following commands to get more information:
+e    / exit
+h    / help
+atg  / add-tag
+det  / delete-tag
+dit  / display-tags
+atk  / add-task
+st   / search-tags
+sd   / search-dates
+std  / search-tags-dates
+stxt / search-text
+stk  / save-tasks
+ltk  / load-tasks
+
+e
+Asks user if they would like to save the current tasks to a file, 
+saves tasks to a specified file if user chooses to, and exits the program.
+
+h
+Opens help menu, displaying a help message. Provides prompt for user to type in 
+a specific command and displays info about it. Hitting return key drops out of the help menu.
+
+atg
+Adds a new tag to a system that can be used to categorize tasks. 
+Displays a prompt to enter a tag name. Hitting return key exits the prompt 
+and no tag is saved. One or more tags can be entered. Tag should have no spaces, 
+and all letters must be lower-case.
+
+det
+Removes specified tag and all its occurrences from the system. All tasks tagged with only this
+tag will be marked as "untagged".
+
+dit
+Displays list of current tags.
+
+atk
+Adds a task, its due date, and all associated tags. If no tags are provided, task will be 
+marked as "untagged".
+
+st
+Searches system for tasks with given tags. Provides a prompt for the user to enter tags to search. 
+Placing keyword AND in frond to a space-separated list of tags will search for tasks containing all 
+of the listed tags. Adding OR keyword will search for tasks containing at least one of the listed 
+tags. User may use parenthesis to group tags. 
+Ex: AND tag1 tag2 tag3 (OR tag4 tag5) tag6
+Above expression will search for tasks containing tag1, tag2, tag3, tag6, and tag4 or tag 5. Once 
+search is finished, an itemized list of found tasks will be displayed.
+
+sd
+Searches system for tasks due on a given date or within a given date rage. Provides a prompt for the
+user to enter date or date range to search. Once search is finished, an itemized list of found tasks 
+will be displayed.
+
+std
+Searches system for tasks with given tags and due on a given date or within given date range. 
+Provides a prompt for the user to enter tags and date or date range to search. 
+Placing keyword AND in frond to a space-separated list of tags will search for tasks containing all 
+of the listed tags. Adding OR keyword will search for tasks containing at least one of the listed 
+tags. User may use parenthesis to group tags. 
+Ex: AND tag1 tag2 tag3 (OR tag4 tag5) 04/25/2021
+Above expression will search for tasks containing tag1, tag2, tag3, and tag4 or tag 5, and which are   
+due on 04/25/2021. Once search is finished, an itemized list of found tasks will be displayed.
+
+stxt
+Searches system for tasks containing a specified text. Provides a prompt for the
+user to enter text to search. Once search is finished, an itemized list of found tasks 
+will be displayed.
+
+stk
+Saves tasks from a system to a specified file.
+
+ltk
+Loads tasks from a specified file into the system.
+
